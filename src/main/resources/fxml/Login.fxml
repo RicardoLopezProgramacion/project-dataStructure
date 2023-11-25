@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="loginPanel" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.RicardoLopezProgramacion.projectDataStructure.controller.LoginController">
+   <children>
+      <AnchorPane layoutY="40.0" prefHeight="660.0" prefWidth="500.0" style="-fx-border-color: blue;">
+         <children>
+            <ImageView fitHeight="660.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="500.0" layoutY="40.0" prefHeight="660.0" prefWidth="500.0" style="-fx-border-color: blue;">
+         <children>
+            <VBox layoutX="75.0" layoutY="80.0" prefHeight="500.0" prefWidth="350.0" spacing="10.0" style="-fx-border-color: blue; -fx-border-radius: 10%;">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="37.0" text="Name" />
+                  <TextField prefHeight="35.0" />
+                  <Label prefHeight="18.0" prefWidth="56.0" text="Lastname" />
+                  <TextField prefHeight="35.0" />
+                  <Label prefHeight="18.0" prefWidth="57.0" text="Cellphone" />
+                  <TextField prefHeight="35.0" />
+                  <Label prefHeight="18.0" prefWidth="79.0" text="Student code" />
+                  <TextField prefHeight="35.0" />
+                  <Label prefHeight="18.0" prefWidth="57.0" text="Feedback" />
+                  <TextArea prefHeight="150.0" prefWidth="308.0" />
+                  <AnchorPane prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="35.0" layoutY="13.0" mnemonicParsing="false" prefWidth="80.0" text="Login" />
+                        <Button layoutX="183.0" layoutY="13.0" mnemonicParsing="false" prefWidth="80.0" text="Login" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" left="20.0" right="20.0" top="35.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="40.0" prefWidth="1000.0" style="-fx-border-color: blue;">
+         <children>
+            <Button fx:id="btExit" layoutX="-4.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="60.0" text="X" translateX="930.0" translateY="5.0" />
+            <Button layoutX="849.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" text="-" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
