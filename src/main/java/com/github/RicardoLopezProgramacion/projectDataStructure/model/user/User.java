@@ -8,12 +8,15 @@ public class User {
 
     // < data for login>
 
+    private String user;
+    private String password;
+
+    // </data for login>
+
     private String name;
     private String lastName;
     private String cellphone;
     private String studentCode;
-
-    // </data for login>
     private int age;
     private String description;
     private LocalDate dayOfBirth;
@@ -22,14 +25,17 @@ public class User {
     // </data for user profile>
 
     // constructor overloading
+    // constructor for login
     public User(String name, String lastName, String cellphone, String studentCode) {
         this.name = name;
         this.lastName = lastName;
         this.cellphone = cellphone;
         this.studentCode = studentCode;
     }
-
-    public User(String name, String lastName, String cellphone, String studentCode, int age, String description, LocalDate dayOfBirth, String email) {
+    // constructor for register user
+    public User(String password, String user, String name, String lastName, String cellphone, String studentCode, int age, String description, LocalDate dayOfBirth, String email) {
+        this.password = password;
+        this.user = user;
         this.name = name;
         this.lastName = lastName;
         this.cellphone = cellphone;
@@ -41,9 +47,16 @@ public class User {
     }
 
     // getters and setters
-    public String getName() {
-        return name;
-    }
+
+    public String getPassword() { return password; }
+
+    public void setPassword(String password) { this.password = password; }
+
+    public String getUser() { return user; }
+
+    public void setUser(String user) { this.user = user; }
+
+    public String getName() { return name; }
 
     public void setName(String name) {
         this.name = name;
@@ -108,14 +121,14 @@ public class User {
     @Override
     public String toString() {
         return "User = {" +
-                "name: '" + name + '\'' +
-                ",lastName : " + lastName + '\'' +
-                ",cellphone : " + cellphone + '\'' +
-                ",studentCode : " + studentCode + '\'' +
-                ",age : " + age +
-                ",description : " + description + '\'' +
-                ",dayOfBirth : " + dayOfBirth +
-                ",email : " + email + '\'' +
+                "name: '" + name + '\n' +
+                ",lastName : " + lastName + '\n' +
+                ",cellphone : " + cellphone + '\n' +
+                ",studentCode : " + studentCode + '\n' +
+                ",age : " + age + '\n' +
+                ",description : " + description + '\n' +
+                ",dayOfBirth : " + dayOfBirth + '\n' +
+                ",email : " + email + '\n' +
                 '}';
     }
 }

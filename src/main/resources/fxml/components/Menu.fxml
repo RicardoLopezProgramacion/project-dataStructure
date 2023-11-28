@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="menuPane" prefHeight="620.0" prefWidth="120.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.RicardoLopezProgramacion.projectDataStructure.controller.components.MenuController">
+    <children>
+        <VBox prefHeight="620.0" prefWidth="120.0" spacing="15.0" style="-fx-background-color: lightblue;">
+            <children>
+                <AnchorPane prefHeight="50.0" style="-fx-border-color: green;" />
+                <AnchorPane prefHeight="50.0" style="-fx-border-color: green;">
+                    <VBox.margin>
+                        <Insets top="50.0" />
+                    </VBox.margin>
+                </AnchorPane>
+                <AnchorPane prefHeight="50.0" style="-fx-border-color: green;">
+                    <VBox.margin>
+                        <Insets top="100.0" />
+                    </VBox.margin>
+                </AnchorPane>
+                <AnchorPane prefHeight="50.0" style="-fx-border-color: green;">
+                    <VBox.margin>
+                        <Insets top="100.0" />
+                    </VBox.margin>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

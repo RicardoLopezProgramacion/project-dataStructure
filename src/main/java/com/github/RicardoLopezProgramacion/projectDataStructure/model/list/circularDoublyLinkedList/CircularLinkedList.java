@@ -1,4 +1,4 @@
-package com.github.RicardoLopezProgramacion.projectDataStructure.model.list.circularLinkedList;
+package com.github.RicardoLopezProgramacion.projectDataStructure.model.list.circularDoublyLinkedList;
 
 import com.github.RicardoLopezProgramacion.projectDataStructure.model.user.User;
 

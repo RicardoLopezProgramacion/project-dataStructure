@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.github.RicardoLopezProgramacion.projectDataStructure.controller.login_register.RegisterController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <AnchorPane prefHeight="660.0" prefWidth="500.0" style="-fx-border-color: blue;">
+            <children>
+                <ImageView fitHeight="660.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="502.0" layoutY="1.0" prefHeight="660.0" prefWidth="500.0" style="-fx-border-color: blue;">
+            <children>
+                <VBox layoutX="125.0" layoutY="178.0" prefHeight="250.0" prefWidth="250.0" spacing="10.0" style="-fx-border-color: blue; -fx-border-radius: 10%;">
+                    <children>
+                        <Label prefHeight="18.0" prefWidth="37.0" text="User" />
+                        <TextField prefHeight="35.0" />
+                        <Label prefHeight="18.0" prefWidth="56.0" text="Password" />
+                        <TextField prefHeight="35.0" />
+                        <HBox spacing="50.0">
+                            <children>
+                                <Button fx:id="btLogin" mnemonicParsing="false" onAction="#login" prefWidth="80.0" text="Login" />
+                                <Button mnemonicParsing="false" prefWidth="80.0" text="Register" />
+                            </children>
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets bottom="40.0" left="20.0" right="20.0" top="30.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

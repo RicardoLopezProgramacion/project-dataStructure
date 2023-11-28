@@ -1,2 +1,7 @@
-package com.github.RicardoLopezProgramacion.projectDataStructure.model.stack;public class Stack {
+package com.github.RicardoLopezProgramacion.projectDataStructure.model.stack;
+
+public class Stack {
+
+
+
 }
